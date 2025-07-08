@@ -5,6 +5,7 @@
 ### 📚 **Informazioni Generali**
 
 Progetto realizzato per il corso di **Basi di Dati** presso l'Università degli Studi di Napoli **"Federico II"**.
+
 Questo progetto implementa una base di dati relazionale per la gestione efficiente e intuitiva delle operazioni dell'aeroporto di Napoli. Il sistema consente l'autenticazione di utenti con ruoli distinti (generico e amministratore), gestisce i voli (partenza/arrivo, stati, ritardi, compagnie, origine/destinazione), le prenotazioni (dati passeggero, biglietto, posto, stato) e l'assegnazione dei gate. L'obiettivo è organizzare e monitorare tutte le operazioni aeroportuali garantendo l'integrità dei dati e facilitando ricerche e aggiornamenti.
 
 ### 🛠️ **Tecnologie Utilizzate**

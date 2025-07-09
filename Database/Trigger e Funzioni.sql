@@ -1,6 +1,15 @@
 -- Funzione generica per la generazione automatica degli ID sequenziali
-CREATE OR REPLACE FUNCTION Genera_ID_Sequenziale(nome_sequenza TEXT)
+CREATE OR REPLACE FUNCTION Genera_ID_Sequenziale()
 RETURNS TRIGGER AS $$
+DECLARE
+    nome_sequenza TEXT;
+BEGIN
+  IF TG_NARGS > 0 THEN
+      nome_sequenza := TG_ARGV[0];
+  ELSE
+      RAISE EXCEPTION 'Erorre interno: la funzione Genera_ID_Sequenziale è stata richiamata senza il nome della sequenza.';
+  END IF;
+
 BEGIN
   CASE TG_TABLE_NAME
     WHEN 'utente' THEN
